@@ -46,12 +46,7 @@
                 <a href="">Share</a>
             </div>
             <div class="topnav-options">
-                <div class="searchbar">
-                    <div class="searchbar-container">
-                        <input type="text">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </div>
-                </div>
+                <input id="searchbar" type="text" placeholder=" "> 
                 <div class="divider"></div>
                 <i class="fa-regular fa-bell"></i>
                 <div class="divider"></div>
@@ -66,11 +61,14 @@
             <div class="title-container">
                 <h1>Your bookshelf</h1>
                 <p>Recent book reviews</p>
+                <div class="controls-container">
+                    <i class="fa-solid fa-filter"></i><p>Filter</p>
+                </div>
             </div>
             <div class="books-container">
                 <div class="book">
                     <div class="info-container">
-                        <img src="./img/books/book2.jpeg" alt="book cover">
+                        <div class="book-img-container"><img src="./img/books/book2.jpeg" alt="book cover"></div>
                         <div class="info">
                             <h3 class="book-title">Greenlights</h3>
                             <p class="book-author">by Matthew McConaughey</p>
@@ -84,36 +82,36 @@
                             <div class="tag">Read</div>
                         </div>
                     </div>
-                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere perferendis nemo debitis molestias expedita beatae enim odio, ipsam facilis sapiente voluptatum asperiores aliquid quae assumenda dolore eligendi velit mollitia eum?</p>
-                    <p class="date">August 23, 2021</p>
+                    <p class="text">This is a great life book for someone who has fell down many times and always gets back up. Very well written, great story tellin, funny, and inspirational. I've already been able to apply a few of the principles in my real life. For an example I had a job interview yesterday at high quality hotel restaurant. While waiting to meet with the hiring manager, I just got in the mind state of one of the principles in the book, which is “Don't walk in there like I want the role. Walk in there like I own it”. With this frame of my mind I literally got the job on the spot and the hiring manager loved me. He went to set up an estage (don't know how to spell it) where I get onsight training essentially to see if it would be a good fit for us. Anyways that has never happened, usually there like “we will get back to you” or “we have a few more interviews”. This time it was like I already owned the role, nothing else needed to be done. It was already so. So I will now own all the roles in my life! This book is just all about self development and a phrase in the book “keep livin”. One of the best books I've read in a longtime. I highly recommend it.</p>
+                    <p class="date">December 23, 2022</p>
                 </div>
 
                 <div class="book">
                     <div class="info-container">
-                        <img src="./img/books/book2.jpeg" alt="book cover">
+                        <div class="book-img-container"><img src="./img/books/book1.jpeg" alt="book cover"></div>
                         <div class="info">
-                            <h3 class="book-title">Greenlights</h3>
-                            <p class="book-author">by Matthew McConaughey</p>
+                            <h3 class="book-title">Project Hail Mary</h3>
+                            <p class="book-author">by Andy Weir</p>
                             <div class="rating">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
                             </div>
                             <div class="tag">Read</div>
                         </div>
                     </div>
-                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere perferendis nemo debitis molestias expedita beatae enim odio, ipsam facilis sapiente voluptatum asperiores aliquid quae assumenda dolore eligendi velit mollitia eum?</p>
-                    <p class="date">August 23, 2021</p>
+                    <p class="text">This book is astonishing on so many levels. The ideas that drive the plot are superb. I was slightly annoyed by the main character (this is intended, surely), but there are other characters that, honestly, I'm blown away that I felt such a deep connection to. I don't want to spoil anything, so I'll just leave it at that.</p>
+                    <p class="date">February 5, 2023</p>
                 </div>
 
                 <div class="book">
                     <div class="info-container">
-                        <img src="./img/books/book2.jpeg" alt="book cover">
+                        <div class="book-img-container"><img src="./img/books/book4.jpeg" alt="book cover"></div>
                         <div class="info">
-                            <h3 class="book-title">Greenlights</h3>
-                            <p class="book-author">by Matthew McConaughey</p>
+                            <h3 class="book-title">Shoe dog</h3>
+                            <p class="book-author">by Phil Knight</p>
                             <div class="rating">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -124,17 +122,169 @@
                             <div class="tag">Read</div>
                         </div>
                     </div>
-                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere perferendis nemo debitis molestias expedita beatae enim odio, ipsam facilis sapiente voluptatum asperiores aliquid quae assumenda dolore eligendi velit mollitia eum?</p>
-                    <p class="date">August 23, 2021</p>
+                    <p class="text">This book is about an entrepreneur's journey, how one man took on the giants and won. The Dassler brothers, founders of Puma and Adidas, began their business in 1924 and Phil Knight began his in 1963. Over the past 18 years of writing reviews, I don't think I have reviewed more than 3 autobiographies. My experience has been that hardly any avoid being little more than an airbrushed account of an extraordinary genius, with depth of character and business prowess, written by the paragon him or herself. My visceral response to an autobiography is ignore.</p>
+                    <p class="date">March 13, 2023</p>
+                </div>
+
+                <div class="book">
+                    <div class="info-container">
+                        <div class="book-img-container"><img src="./img/books/book8.jpeg" alt="book cover"></div>
+                        <div class="info">
+                            <h3 class="book-title">Meditations</h3>
+                            <p class="book-author">by Marco Aurelio</p>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="tag">Read</div>
+                        </div>
+                    </div>
+                    <p class="text">Meditations is a captivating rendition of Marcus Aurelius' profound insights. With clarity and eloquence, it unveils the timeless wisdom of Stoic philosophy. It is a must-read for anyone seeking inner peace and personal growth. Prepare to be inspired and transformed by this remarkable translation.</p>
+                    <p class="date">April 2, 2023</p>
+                </div>
+
+                <div class="book">
+                    <div class="info-container">
+                        <div class="book-img-container"><img src="./img/books/book9.jpeg" alt="book cover"></div>
+                        <div class="info">
+                            <h3 class="book-title">Leonardo Del Vecchio</h3>
+                            <p class="book-author">by Tommaso Ebhardt</p>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="tag">Read</div>
+                        </div>
+                    </div>
+                    <p class="text">Il libro offre una prospettiva intima e dettagliata sulla straordinaria storia di Leonardo Del Vecchio, fondatore e presidente di uno dei maggiori colossi nel settore dell'occhialeria, tracciando l'evoluzione di Del Vecchio, dalle sue umili origini fino al raggiungimento del successo internazionale. Non è una glorificazione acritica di Del Vecchio, ma un ritratto equilibrato e realistico di un uomo complesso. L'autore esplora le sue vittorie e le sue sconfitte, i momenti di genio imprenditoriale e le sfide personali che ha dovuto affrontare lungo il cammino. Narrazione coinvolgente e ben strutturata, che spazia dalla sua infanzia difficile fino alla creazione di un impero imprenditoriale. L'autore riesce a far emergere la determinazione, l'ingegno e la visione di Del Vecchio, ma allo stesso tempo lascia spazio alle sfumature e alle imperfezioni del protagonista.
+                        </p>
+                    <p class="date">April 24, 2023</p>
+                </div>
+
+                <div class="book">
+                    <div class="info-container">
+                        <div class="book-img-container"><img src="./img/books/book6.jpeg" alt="book cover"></div>
+                        <div class="info">
+                            <h3 class="book-title">Educated</h3>
+                            <p class="book-author">by Tara Westover</p>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="tag">Read</div>
+                        </div>
+                    </div>
+                    <p class="text">Tara Westover's emotional story broke my heart even as she tells it in a very matter of fact style. She's raw and honest about her own self and shortcomings, she turns the lens on herself many times in the book, shining a light on her own bad behaviors and choices. Her story is shocking, infuriating and at times just plain, disturbing, but I couldn't stop reading it. I didn't feel it was redundant at all, although you can say, many of the same bad things happen to her over and over again; car accidents, freak accidents in the junkyard, physical and verbal abuse from her older brother and worst of all, the sheer lack of protection she had from her parents. </p>
+                    <p class="date">May 5, 2023</p>
+                </div>
+
+                <div class="book">
+                    <div class="info-container">
+                        <div class="book-img-container"><img src="./img/books/book7.jpeg" alt="book cover"></div>
+                        <div class="info">
+                            <h3 class="book-title">Thinking, fast and slow</h3>
+                            <p class="book-author">by Daniel Kahneman</p>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="tag">Read</div>
+                        </div>
+                    </div>
+                    <p class="text">I did not consider this book for its contentious ideas regarding human thought, but rather as an interesting framework regarding thought processes and a different perspective on the way we process information. I find Daniel Kahneman's "Thinking Fast and Slow" is a fantastic read as an expansion of his earlier work with Amos Tversky on the human decision-making pathways of heuristics and algorithms which the book are presented as the two "main characters" as he likes to call them: System 1 (the fast) and System 2 (the slow). Overall, I enjoyed Kahneman's engaging use of examples and simple "mini-experiments" which allowed me to try and witness the results firsthand. The addition of light humor in his simple, yet robust writing style keeps the didactic tone at the forefront of the text while still keeping the admittedly long book interesting enough to keep the pages turning.</p>
+                    <p class="date">June 13, 2023</p>
                 </div>
                 
+                <div class="book">
+                    <div class="info-container">
+                        <div class="book-img-container"><img src="./img/books/book3.jpeg" alt="book cover"></div>
+                        <div class="info">
+                            <h3 class="book-title">Oppenheimer</h3>
+                            <p class="book-author">by Kai Bird and M. J. Sherwin</p>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="tag">Read</div>
+                        </div>
+                    </div>
+                    <p class="text">I purchased this book in anticipation of the Christopher Nolan movie about Oppenheimer coming out in the summer of 2023. It offers amazing insight into Oppenheimer's childhood, schooling, and adult life both during and after the development of the bomb. I found the book very tedious on topics that I would not relate directly to Oppenheimer. Essentially every person he interacted with during his life is scrutinized in minute detail. At a paperback length in excess of 700 pages, this scrutiny is just too much and in my opinion really waters down the overall story. The details of how Oppenheimer's mind works and how he matures from a shy physics phenom to a lady's man is all very interesting. His relationships with other famous physicists of his day are also enlightening and fascinating.</p>
+                    <p class="date">July 12, 2023</p>
+                </div>
+
+
             </div>
             <div class="side-container">
+                <div class="currently-reading">
+                    <h3>Currently reading</h3>
+                    <div class="current-book">
+                        <img src="img/books/book3.jpeg" alt="">
+                        <div class="current-info">
+                            <h3 class="book-title">Oppenheimer</h3>
+                            <p class="book-author">by Kai Bird and M. J. Sherwin</p>
+                        </div>
+                    </div>
+                    <div class="current-book">
+                        <img src="img/books/book5.jpg" alt="">
+                        <div class="current-info">
+                            <h3 class="book-title">L'uomo che scambiò sua moglie per un cappello</h3>
+                            <p class="book-author">by Oliver Sacks</p>
+                        </div>
+                    </div>
+                </div>
+                   
+            
                 <div class="reading-goal">
-
+                    <div class="reading-goal-up">
+                        <h3>2023 Reading goal</h3>
+                        <p>Read 15 books by Dec 31, 2023</p>
+                    </div>
+                    <div class="progress-bar"><div class="status"></div></div>
+                    <div class="reading-goal-down">
+                        <p>Progress: 47%</p>
+                        <p>You've already read 7 books out of 15!</p>
+                    </div>
                 </div>
                 <div class="friends">
-
+                    <div class="friends-text">
+                        <h3>Friends</h3>
+                        <p>Recently active</p>
+                    </div>
+                    <div class="friend">
+                        <div class="friend-img"><img src="img/profile.png" alt=""></div>
+                        <div class="friend-name"><p>@swelsh</p></div>
+                    </div>
+                    <div class="friend">
+                        <div class="friend-img"><img src="img/profile.png" alt=""></div>
+                        <div class="friend-name"><p>@swelsh</p></div>
+                    </div>
+                    <div class="friend">
+                        <div class="friend-img"><img src="img/profile.png" alt=""></div>
+                        <div class="friend-name"><p>@swelsh</p></div>
+                    </div>
+                    <div class="friend">
+                        <div class="friend-img"><img src="img/profile.png" alt=""></div>
+                        <div class="friend-name"><p>@swelsh</p></div>
+                    </div>
+                    <div class="friend">
+                        <div class="friend-img"><img src="img/profile.png" alt=""></div>
+                        <div class="friend-name"><p>@swelsh</p></div>
+                    </div>
                 </div>
             </div>
         </div>
