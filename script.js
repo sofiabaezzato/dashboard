@@ -262,6 +262,11 @@ function openOverlay() {
     overlay.style.display = 'flex'
     body.style.overflow = "hidden"
     overlayIsOpen = true;
+    var screenWidth = document.documentElement.clientWidth || window.innerWidth
+    if (screenWidth < 660) {
+        document.getElementById("addBookContainer").style.height = "100%";
+        document.getElementById("addBookContainer").style.width = "100%";
+    }
 }
 
 function closeOverlay() {
