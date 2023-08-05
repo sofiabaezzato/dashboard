@@ -15,9 +15,7 @@ let submitBtn = document.getElementById("submitBtn");
 let sidePeekIsOpen = false;
 let overlayIsOpen = false;
 
-addBookBtn.onclick = () => openOverlay();
-closeBtn.onclick = () => closePeek();
-backBtn.onclick = () => closeOverlay();
+
 
 // Load existing books from localStorage or initialize with default books
 let books = JSON.parse(localStorage.getItem("books"));
@@ -25,6 +23,14 @@ if (!books) {
     initializeDefaultBooks();
     books = JSON.parse(localStorage.getItem("books"));
 }
+
+addBookBtn.onclick = () => openOverlay();
+closeBtn.onclick = () => closePeek();
+
+backBtn.addEventListener('click', (event) => {
+    event.preventDefault()
+    closeOverlay()
+})
 
 document.addEventListener('click', (event) => {
     if (event.target.classList.contains('submit-button')) {
