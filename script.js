@@ -5,6 +5,7 @@ const removeBtn = document.getElementById('removeBtn');
 const closeBtn = document.getElementById('closeBtn');
 const expandBtns = document.querySelectorAll('.expand-btn');
 let bookContainer = document.querySelector(".books-container");
+const body = document.querySelector("body")
 
 // add book overlay
 let overlay = document.getElementById("overlay");
@@ -168,6 +169,7 @@ function openPeek(target) {
     let currentIndex = search(currentBookId)
     let currentBook = books[currentIndex]
     sidePeekContent.innerHTML = createSidePeekContent(currentBook)
+    
     var screenWidth = document.documentElement.clientWidth || window.innerWidth
     if (screenWidth < 660) {
         sidePeek.style.width = "100%";
@@ -181,7 +183,7 @@ function openPeek(target) {
         sidePeek.style.width = "50%";
         sidePeek.style.right = "0";
     }
-        sidePeekIsOpen = true;
+    sidePeekIsOpen = true;
 }
 
 function closePeek() {
@@ -250,10 +252,12 @@ document.getElementById('date').value = new Date().toISOString().substring(0, 10
 
 function openOverlay() {
     overlay.style.display = 'flex';
+    body.style.overflow = "hidden"
     overlayIsOpen = true;
 }
 
 function closeOverlay() {
+    body.style.overflow = "auto"
     overlayIsOpen = false;
     overlay.style.display = 'none';
 }
