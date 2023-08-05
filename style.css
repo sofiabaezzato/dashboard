@@ -556,7 +556,10 @@ h3 {
 }
 
 .sidepeek-container {
-    padding: 3rem 2rem 0 2rem;
+    border: 2px solid var(--accent-color);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 2rem;
     display: grid;
     grid-template-rows: repeat(3, auto);
     grid-template-columns: 8fr 1fr;
