@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <script src="./script.js" defer></script>
     <script src="https://kit.fontawesome.com/223092cf53.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap" rel="stylesheet">
@@ -14,44 +14,90 @@
     <title>Greatbooks: Dashboard</title>
 </head>
 <body>
+    <div class="overlay-container" id="overlay">
+        <div class="add-book-container" id="addBookContainer">
+            <h3>Add a new book</h3>
+            <form action="" class="book-form">
+                <div class="form-row">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" name="title">
+                </div>
+                <div class="form-row">
+                    <label for="author">Author</label>
+                    <input type="text" id="author" name="author">
+                </div>
+                <fieldset class="legacy-form-row">
+                    <legend>Status</legend>
+                        <input  id="status-type-1"
+                                name="status"
+                                type="radio"
+                                value="Read">
+                        <label for="status-type-1" class="radio-label">Read</label>
+                        <input  id="status-type-2"
+                                name="status"   
+                                type="radio"
+                                value="Reading">
+                        <label for="status-type-2" class="radio-label">Reading</label>
+                        <input  id="status-type-3"
+                                name="status"
+                                type="radio"
+                                value="To be read">
+                        <label for="status-type-3" class="radio-label">To be read</label>
+                </fieldset>
+                <div class="form-row">
+                    <label for="review">Review</label>
+                    <textarea id="review" name="review" placeholder="Write a review for this book"></textarea>
+                </div>
+                <div class="form-row">
+                    <label for="date">Date</label>
+                    <input id="date" name="date" type="date">
+                </div>
+                <div class="form-row-btn">
+                    <button class="back-button " id="backBtn">Back</button>
+                    <button class="submit-button" id="submitBtn">ADD BOOK</button>
+                </div>
+            </form>
+            <div class="message">"This book is already in your bookshelf!"</div>
+        </div>
+    </div>
     <main class="page-container">
+        
         <div class="sidenav">
             <div class="sidenav-top-menu">
                 <div class="logo">
                     <p>Greatbooks</p>
                 </div>
-                <a href="" class="sidenav-link active">
+                <a href="javascript:void(0)" class="sidenav-link active">
                     <div class="link"><i class="fa-solid fa-house"></i>Dashboard</div>
                 </a>
-                <a href="" class="sidenav-link">
+                <a href="javascript:void(0)" class="sidenav-link">
                     <div class="link"><i class="fa-solid fa-compass"></i>Discover</div>
                 </a>
-                <a href="" class="sidenav-link">
+                <a href="javascript:void(0)" class="sidenav-link">
                     <div class="link"><i class="fa-solid fa-book"></i>Lists</div>
                 </a>
-                <a href="" class="sidenav-link">
+                <a href="javascript:void(0)" class="sidenav-link">
                     <div class="link"><i class="fa-solid fa-chart-simple"></i>Stats</div>
                 </a>
             </div>
             <div class="sidenav-bottom-menu">
-                <a href="" class="sidenav-link">
+                <a href="javascript:void(0)" class="sidenav-link">
                     <div class="link"><i class="fa-solid fa-gear"></i>Settings</div>
                 </a>
             </div>
             
         </div>
         <div class="topnav">
-            <div class="ham-menu"><i class="fa-solid fa-bars"></i></div>
             <div class="topnav-links">
                 <a id="addBook">Add book</a>
-                <a href="">Share</a>
             </div>
+            <div class="ham-menu"><i class="fa-solid fa-bars"></i></div>
             <div class="topnav-options">
                 <input id="searchbar" type="text" placeholder=" "> 
                 <div class="divider"></div>
                 <i class="fa-regular fa-bell"></i>
                 <div class="divider"></div>
-                <a href="" class="profile">
+                <a href="javascript:void(0)" class="profile">
                     <p>Sofia</p>
                     <img src="./img/profile.png" alt="profile picture" class="profile-img">
                 </a>
@@ -276,12 +322,12 @@
                 <div class="reading-goal">
                     <div class="reading-goal-up">
                         <h3>2023 Reading goal</h3>
-                        <p>Read 15 books by Dec 31, 2023</p>
+                        <p>Read 20 books by Dec 31, 2023</p>
                     </div>
                     <div class="progress-bar"><div class="status"></div></div>
                     <div class="reading-goal-down">
-                        <p>Progress: 47%</p>
-                        <p>You've already read 7 books out of 15!</p>
+                        <p id="progress"></p>
+                        <p id="readingGoal"></p>
                     </div>
                 </div>
                 <div class="friends">
