@@ -168,6 +168,7 @@ function createSidePeekContent(book) {
 }
 
 function openPeek(target) {
+    body.style.overflow = "hidden"
     // Load existing books from localStorage or initialize an empty array
     books = JSON.parse(localStorage.getItem("books")) || [];
 
@@ -193,6 +194,7 @@ function openPeek(target) {
 }
 
 function closePeek() {
+    body.style.overflow = "auto"
     sidePeek.style.width = "0";
     sidePeek.style.right = "-20%";
     sidePeekIsOpen = false;
@@ -257,7 +259,7 @@ renderReadCount()
 document.getElementById('date').value = new Date().toISOString().substring(0, 10)
 
 function openOverlay() {
-    overlay.style.display = 'flex';
+    overlay.style.display = 'flex'
     body.style.overflow = "hidden"
     overlayIsOpen = true;
 }
