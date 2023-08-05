@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <script src="https://kit.fontawesome.com/223092cf53.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap" rel="stylesheet">
@@ -42,7 +43,7 @@
         <div class="topnav">
             <div class="ham-menu"><i class="fa-solid fa-bars"></i></div>
             <div class="topnav-links">
-                <a href="">Add book</a>
+                <a id="addBook">Add book</a>
                 <a href="">Share</a>
             </div>
             <div class="topnav-options">
@@ -57,6 +58,11 @@
                 
             </div>
         </div>
+        <div class="side-peek" id="sidePeek">
+            <a href="javascript:void(0)" class="close-btn" id="closeBtn"><i class="fa-solid fa-angles-right"></i></a>
+
+            <div class="side-peek-content" id="sidePeekContent"></div>
+        </div>
         <div class="main-content">
             <div class="title-container">
                 <h1>Your bookshelf</h1>
@@ -65,8 +71,27 @@
                     <i class="fa-solid fa-filter"></i><p>Filter</p>
                 </div>
             </div>
-            <div class="books-container">
-                <div class="book">
+            <div class="books-container">          
+                <!-- <div class="book" id="bookCard">
+                    <div class="info-container">
+                        <div class="info">
+                            <h3 class="book-title">Greenlights</h3>
+                            <p class="book-author">by Matthew McConaughey</p>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="tag">Read</div>
+                        </div>
+                        <i id="21" class="expand-btn fa-solid fa-up-right-and-down-left-from-center"></i>
+                    </div>
+                    <p class="text">This is a great life book for someone who has fell down many times and always gets back up. Very well written, great story tellin, funny, and inspirational. I've already been able to apply a few of the principles in my real life. For an example I had a job interview yesterday at high quality hotel restaurant. While waiting to meet with the hiring manager, I just got in the mind state of one of the principles in the book, which is “Don't walk in there like I want the role. Walk in there like I own it”. With this frame of my mind I literally got the job on the spot and the hiring manager loved me. He went to set up an estage (don't know how to spell it) where I get onsight training essentially to see if it would be a good fit for us. Anyways that has never happened, usually there like “we will get back to you” or “we have a few more interviews”. This time it was like I already owned the role, nothing else needed to be done. It was already so. So I will now own all the roles in my life! This book is just all about self development and a phrase in the book “keep livin”. One of the best books I've read in a longtime. I highly recommend it.</p>
+                    <p class="date">December 23, 2022</p>
+                </div> -->
+                <!-- <div class="book" id="bookCard">
                     <div class="info-container">
                         <div class="book-img-container"><img src="./img/books/book2.jpeg" alt="book cover"></div>
                         <div class="info">
@@ -84,9 +109,9 @@
                     </div>
                     <p class="text">This is a great life book for someone who has fell down many times and always gets back up. Very well written, great story tellin, funny, and inspirational. I've already been able to apply a few of the principles in my real life. For an example I had a job interview yesterday at high quality hotel restaurant. While waiting to meet with the hiring manager, I just got in the mind state of one of the principles in the book, which is “Don't walk in there like I want the role. Walk in there like I own it”. With this frame of my mind I literally got the job on the spot and the hiring manager loved me. He went to set up an estage (don't know how to spell it) where I get onsight training essentially to see if it would be a good fit for us. Anyways that has never happened, usually there like “we will get back to you” or “we have a few more interviews”. This time it was like I already owned the role, nothing else needed to be done. It was already so. So I will now own all the roles in my life! This book is just all about self development and a phrase in the book “keep livin”. One of the best books I've read in a longtime. I highly recommend it.</p>
                     <p class="date">December 23, 2022</p>
-                </div>
+                </div> -->
 
-                <div class="book">
+                <!-- <div class="book">
                     <div class="info-container">
                         <div class="book-img-container"><img src="./img/books/book1.jpeg" alt="book cover"></div>
                         <div class="info">
@@ -225,8 +250,7 @@
                     </div>
                     <p class="text">I purchased this book in anticipation of the Christopher Nolan movie about Oppenheimer coming out in the summer of 2023. It offers amazing insight into Oppenheimer's childhood, schooling, and adult life both during and after the development of the bomb. I found the book very tedious on topics that I would not relate directly to Oppenheimer. Essentially every person he interacted with during his life is scrutinized in minute detail. At a paperback length in excess of 700 pages, this scrutiny is just too much and in my opinion really waters down the overall story. The details of how Oppenheimer's mind works and how he matures from a shy physics phenom to a lady's man is all very interesting. His relationships with other famous physicists of his day are also enlightening and fascinating.</p>
                     <p class="date">July 12, 2023</p>
-                </div>
-
+                </div> -->
 
             </div>
             <div class="side-container">
